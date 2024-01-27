@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# run_t
+#
+# Runs app with --tunnel flag
+
+# Stop on errors, print commands
+# See https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/
+set -Eeuo pipefail
+set -x
+
+sudo npx expo start --tunnel
