@@ -8,7 +8,7 @@ function Dashboard(props) {
             source={require('../assets/splash.png')}
         >
             <View style={styles.loginButton}>
-                <Text> Hello World! </Text>
+                <Text> Hello World!  I want to die</Text>
             </View>
         </ImageBackground>
     );
