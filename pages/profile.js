@@ -1,6 +1,6 @@
 import React from "react";
 import {Button, StyleSheet, Text, View, ImageBackground, ScrollView, Dimensions} from "react-native";
-import { Card, CardFooter} from '../components/card';
+import { Card, CardFooter } from '../components/card';
 import { GlobalText, GlobalColor } from '../components/global_styles';
 // import firestore from '@react-native-firebase/firestore';
 
