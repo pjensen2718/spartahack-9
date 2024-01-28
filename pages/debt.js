@@ -1,37 +1,17 @@
-import { View, Text } from 'react-native';
+import { View, Text, Dimensions } from 'react-native';
 import { Card, CardFooter } from "../components/card.js";
+import { Graph } from "../components/graph.js";
 import { GlobalColor, GlobalText } from '../components/global_styles.js';
+import { LineChart } from 'react-native-chart-kit';
 
+// <View style={{ flex: 1,  alignItems: 'center' }}>
 export default function Debt() {
     console.log("-> Debt")
     return (
-        <View style={GlobalColor.bg}>
-            {/* the segment below is for the top section:
-                meant for short-term debts */}
-            <Card>
-                {/* header */}
-                <Text style={GlobalText.headerText}>Short-Term Debts</Text>
-                {/* 
-                    * bullet listing
-                    * 
-                    */}
-                <Text style={GlobalText.normalText}>
-                    
-                </Text>
-            </Card>
-            {/* the segment below is for the bottom section:
-                meant for long-term debts */}
-            <Card>
-                {/* header */}
-                <Text style={GlobalText.headerText}>Long-Term Debts</Text>
-                {/* 
-                    * bullet listing
-                    * 
-                    */}
-                <Text style={GlobalText.normalText}>
-                    
-                </Text>
-            </Card>
-        </View>
+      <Card>
+        <Graph>
+          {[["Jan","Feb","Mar","Apr","May"],[1,2,3,3,4]]}
+        </Graph>
+      </Card>
     );
 }

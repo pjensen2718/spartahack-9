@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ImageBackground, StyleSheet, View, Text, SafeAreaView,ScrollView, Dimensions, Image} from "react-native";
+import { ImageBackground, StyleSheet, View, Text, StatusBar,ScrollView, Dimensions, Image, SafeAreaView, Platform} from "react-native";
 import {Card} from '../components/card.js';
 
 import {
@@ -33,7 +33,7 @@ function Dashboard(props) {
                 source={require('../assets/splash.png')}
             >
                 {/* Header */} 
-                <SafeAreaView>
+                <SafeAreaView style={{ flex: 1 }}>
                     <View style={styles.headerContainer}>
                         <View>
                             {/* Welcome Message */}
@@ -125,6 +125,7 @@ function Dashboard(props) {
 
 const styles = StyleSheet.create({
     background: {
+        paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
         flex: 1,
     },
     loginButton: {
