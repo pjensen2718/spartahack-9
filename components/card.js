@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Dimensions } from 'react-native';
+import { View, Dimensions, Button } from 'react-native';
 import { GlobalColor } from './global_styles';
 
 // Based off of
