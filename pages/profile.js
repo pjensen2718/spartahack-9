@@ -5,6 +5,7 @@ import { GlobalText, GlobalColor } from '../components/global_styles';
 // import firestore from '@react-native-firebase/firestore';
 
 export default function ProfileScreen() {
+    console.log("-> Profile")
     return (
         <ScrollView style={GlobalColor.bg}>
             <Card>

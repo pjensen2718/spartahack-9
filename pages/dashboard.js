@@ -12,7 +12,6 @@ import {
 } from "react-native-chart-kit";
 
 function Dashboard(props) {
-    
     // DATE/TIME 
     const [currentDateTime, setCurrentDateTime] = useState(new Date());
     useEffect(() => {

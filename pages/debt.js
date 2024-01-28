@@ -1,11 +1,18 @@
-import { View, Text } from 'react-native';
+import { ScrollView, Text } from 'react-native';
 import { Card, CardFooter } from "../components/card.js";
 import { GlobalColor, GlobalText } from '../components/global_styles.js';
+
+let short_terms = [-1, -2, -3, -4, -5, -6, -7, -8, -9, -10, -11, -12, -13, -14, -15, -16, -17, -18, -19, -20];
+let long_terms = [-100, -200, -300, -400, -500];
+
+function printDebts(debts) {
+    
+}
 
 export default function Debt() {
     console.log("-> Debt")
     return (
-        <View style={GlobalColor.bg}>
+        <ScrollView style={GlobalColor.bg}>
             {/* the segment below is for the top section:
                 meant for short-term debts */}
             <Card>
@@ -29,9 +36,10 @@ export default function Debt() {
                     * 
                     */}
                 <Text style={GlobalText.normalText}>
-                    
+                
                 </Text>
             </Card>
-        </View>
+            <CardFooter></CardFooter>
+        </ScrollView>
     );
 }

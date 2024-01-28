@@ -1,4 +1,4 @@
-import { View, Text, Button, Statusbar } from "react-native";
+import { ScrollView, Text, Button, Statusbar } from "react-native";
 import { Card, CardFooter } from "../components/card.js";
 import { GlobalColor, GlobalText } from "../components/global_styles.js";
 
@@ -9,7 +9,7 @@ export default function Assets() {
         // requires:
         //   -background color
         //   -boxes for text, images?, data
-        <View style={GlobalColor.bg}>
+        <ScrollView style={GlobalColor.bg}>
             {/* the segment below is for the top section:
                 meant for short-term assets */}
             <Card>
@@ -37,6 +37,6 @@ export default function Assets() {
                     </Text>
             </Card>
             <CardFooter></CardFooter>
-        </View>
+        </ScrollView>
     );
 }
