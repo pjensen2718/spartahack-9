@@ -1,4 +1,6 @@
 import { View, Text, Button, Statusbar } from "react-native";
+import Card from "../components/card.js";
+import { GlobalColor, GlobalText } from "../components/global_styles";
 
 export default function Assets({ navigation }) {
     console.log("-> Assets");
@@ -7,27 +9,27 @@ export default function Assets({ navigation }) {
         // requires:
         //   -background color
         //   -boxes for text, images?, data
-        <View style={{ backgroundColor: "gray" }}>
+        <View style={{backgroundColor: GlobalColor.background}}>
             {/* the segment below is for the top section:
                 meant for short-term assets */}
-            <View>
+            <Card>
                 {/* header */}
                 <Text>Short-Term Assets</Text>
                 {/* 
                   * bullet listing
                   * 
                   */}
-            </View>
+            </Card>
             {/* the segment below is for the bottom section:
                 meant for long-term assets */}
-            <View>
+            <Card>
                 {/* header */}
                 <Text>Long-Term Assets</Text>
                 {/* 
                   * bullet listing
                   * 
                   */}
-            </View>
+            </Card>
             {/* the below should be the navigation bar */}
             <View>
                 <Button 
