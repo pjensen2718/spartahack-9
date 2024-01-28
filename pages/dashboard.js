@@ -23,6 +23,12 @@ const styles = StyleSheet.create({
         height: 70, 
         backgroundColor: "#fc5c65"
     },
+    container: {
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center',
+      },
 });
 
 export default Dashboard;
