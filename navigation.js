@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Ionicons } from '@expo/vector-icons';
+import { MaterialIcons } from '@expo/vector-icons';
 
 // Import Pages
 import Dashboard from './pages/dashboard.js';
@@ -21,26 +21,26 @@ export default function NavBar() {
               let iconName;
   
               if (route.name === 'Home') {
-                iconName = focused ? 'ios-information-circle' : 'ios-information-circle-outline';
+                iconName = focused ? 'home' : 'home';
               } else if (route.name === 'Settings') {
-                iconName = focused ? 'ios-list' : 'ios-list-outline';
-              } else if (route.name === 'Debt') {
-                iconName = focused ? 'ios-list' : 'ios-list-outline';
+                iconName = focused ? 'settings' : 'settings';
               } else if (route.name === 'Assets') {
-                iconName = focused ? 'ios-list' : 'ios-list-outline';
-              } else if (route.name === '')
+                iconName = focused ? 'attach-money' : 'attach-money';
+              } else if (route.name === 'Debt') {
+                iconName = focused ? 'account-balance' : 'account-balance';
+              }
   
               // You can return any component that you like here!
-              return <Ionicons name={iconName} size={size} color={color} />;
+              return <MaterialIcons name={iconName} size={size} color={color} />;
             },
             tabBarActiveTintColor: 'tomato',
             tabBarInactiveTintColor: 'gray',
           })}
         >
         <Tab.Screen name="Home" component={Dashboard} />
-        <Tab.Screen name="Settings" component={Profile} />
-        <Tab.Screen name="Debt" component={Debt} />
         <Tab.Screen name="Assets" component={Assets} />
+        <Tab.Screen name="Debt" component={Debt} />
+        <Tab.Screen name="Settings" component={Profile} />
         </Tab.Navigator>
     </NavigationContainer>
   );
