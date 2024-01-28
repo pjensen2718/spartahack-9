@@ -124,10 +124,6 @@ function Dashboard(props) {
 }
 
 const styles = StyleSheet.create({
-    background: {
-        paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
-        flex: 1,
-    },
     loginButton: {
         width: '100%',
         height: 70, 
