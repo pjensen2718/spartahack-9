@@ -54,23 +54,23 @@ function Dashboard(props) {
                 </GraphCard>
 
                 <Card>
-                    <View style = {{flex: 1}}>
+                <View style = {{flexDirection: 'row', flex: 1, alignItems: "center", justifyContent: 'space-between'}}>
+                        <Text style={{textAlign: 'left', fontWeight:'bold', fontSize: 20}}> Card : </Text>                        
                         <Text style = {GlobalText.headerText}> $3000 </Text>
-                        <Text> Card </Text>
                     </View>
                 </Card>
 
                 <Card>
-                    <View style = {{flex: 1}}>
+                <View style = {{flexDirection: 'row', flex: 1, alignItems: "center", justifyContent: 'space-between'}}>
+                        <Text style={{textAlign: 'left', fontWeight:'bold', fontSize: 20}}> Rent : </Text>                        
                         <Text style = {GlobalText.headerText}> $3000 </Text>
-                        <Text> Rent </Text>
                     </View>
                 </Card>
 
                 <Card>
-                    <View style = {{flex: 1}}>
+                <View style = {{flexDirection: 'row', flex: 1, alignItems: "center", justifyContent: 'space-between'}}>
+                        <Text style={{textAlign: 'left', fontWeight:'bold', fontSize: 20}}> Bills : </Text>                        
                         <Text style = {GlobalText.headerText}> $3000 </Text>
-                        <Text> Bills </Text>
                     </View>
                 </Card>
         </ScrollView>
