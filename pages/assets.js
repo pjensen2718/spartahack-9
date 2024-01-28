@@ -9,7 +9,7 @@ export default function Assets() {
         // requires:
         //   -background color
         //   -boxes for text, images?, data
-        <View style={{backgroundColor: GlobalColor.background}}>
+        <View style={GlobalColor.bg}>
             {/* the segment below is for the top section:
                 meant for short-term assets */}
             <Card>
@@ -19,6 +19,9 @@ export default function Assets() {
                   * bullet listing
                   * 
                   */}
+                <Text style={GlobalText.normalText}>
+                    
+                </Text>
             </Card>
             {/* the segment below is for the bottom section:
                 meant for long-term assets */}
@@ -29,6 +32,9 @@ export default function Assets() {
                   * bullet listing
                   * 
                   */}
+                <Text style={GlobalText.normalText}>
+                    
+                    </Text>
             </Card>
             <CardFooter></CardFooter>
         </View>
