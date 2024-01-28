@@ -11,11 +11,20 @@ var screenWidth = Dimensions.get('window').width;
 var screenHeight = Dimensions.get('window').height;
 
 // Card - iOS widget-style card that puts viewable stuff in a contained square
-const Card = (props) => {
+export const Card = (props) => {
     return (
         // Display the inside; props
         <View style = {styles.containerStyle}>
             {props.children}
+        </View>
+    );
+};
+
+// Card footer - give space at bottom of card list
+export const CardFooter = () => {
+    return (
+        <View style = {styles.footer}>
+
         </View>
     );
 };
@@ -30,7 +39,8 @@ const styles = {
         marginLeft: screenWidth/20,
         marginRight: screenWidth/20,
         marginTop: screenWidth/20,
+    },
+    footer: {
+        height: screenWidth/20
     }
-}
-
-export default Card;
+};

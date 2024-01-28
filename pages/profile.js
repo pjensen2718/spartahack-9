@@ -1,6 +1,6 @@
 import React from "react";
 import {Button, StyleSheet, Text, View, ImageBackground, ScrollView, Dimensions} from "react-native";
-import Card from '../components/card';
+import { Card, CardFooter} from '../components/card';
 import { GlobalText, GlobalColor } from '../components/global_styles';
 // import firestore from '@react-native-firebase/firestore';
 
@@ -43,9 +43,19 @@ export default function ProfileScreen() {
                         Preferences
                 </Text>
                 <Text style = {GlobalText.normalText}>
-                    lorem ispum dolar blah bal
+                    lorem{"\n"}{"\n"}{"\n"}{"\n"}{"\n"}{"\n"} 
+                    ispum 
+                    {"\n"}{"\n"}{"\n"}{"\n"}{"\n"}{"\n"}{"\n"}{"\n"}
+                    dolar 
+                    {"\n"}{"\n"}{"\n"}{"\n"}{"\n"}
+                    blah 
+                    {"\n"}{"\n"}{"\n"}{"\n"}
+                    bal
                 </Text>
             </Card>
+
+            <CardFooter>
+            </CardFooter>
 
         </ScrollView>
     );
