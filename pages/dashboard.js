@@ -29,10 +29,6 @@ function Dashboard(props) {
 
     return (
         <ScrollView style = {styles.background}>
-            <ImageBackground
-                style={styles.background}
-                source={require('../assets/splash.png')}
-            >
                 {/* Header */} 
                 <SafeAreaView style={{ flex: 1 }}>
                     <View style={styles.headerContainer}>
@@ -58,30 +54,25 @@ function Dashboard(props) {
                 </GraphCard>
 
                 <Card>
-                    <Text style = {GlobalText.headerText}>Due this month:</Text>
-                </Card> 
-
-                <View style={{alignItems: 'flex-end', marginRight: 20}}>
-                    <Text> Expand    </Text>
-                    <Text> Hello World!  I want to die    </Text>
-                    <Text> Experimental 2    </Text>
-                </View>
-
-                <View
-                    style={{
-                    width: 50,
-                    height: 50,
-                    backgroundColor: 'powderblue',
-                    }}
-                />
-
-                <Card>
-                    <Text>
-                        Experimental
-                    </Text>
+                    <View style = {{flex: 1}}>
+                        <Text style = {GlobalText.headerText}> $3000 </Text>
+                        <Text> Card </Text>
+                    </View>
                 </Card>
 
-            </ImageBackground>
+                <Card>
+                    <View style = {{flex: 1}}>
+                        <Text style = {GlobalText.headerText}> $3000 </Text>
+                        <Text> Rent </Text>
+                    </View>
+                </Card>
+
+                <Card>
+                    <View style = {{flex: 1}}>
+                        <Text style = {GlobalText.headerText}> $3000 </Text>
+                        <Text> Bills </Text>
+                    </View>
+                </Card>
         </ScrollView>
     );
 }
