@@ -18,6 +18,10 @@ function Testmain({ navigation }) {
         title="Go to Profile"
         onPress={() => navigation.navigate('Profile')}
       />
+      <Button
+        title="Go to Dashboard"
+        onPress={() => navigation.navigate('Dashboard')}
+      />
     </View>
   );
 }
