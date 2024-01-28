@@ -56,12 +56,14 @@ const db = new sqlite3.Database(dbPath, sqlite3.OPEN_READWRITE, (err) => {
   });
 
   app.get('/transactions/:userId', (req, res) => {
+    // print when the request is received
+    console.log(`Received request for user ${req.params.userId}`);
     const { userId } = req.params;
     const sql = `
-      SELECT Users.UserID, Users.LastName, Users.FirstName, Transactions.Amount
-      FROM Users
-      INNER JOIN Transactions ON Users.UserID = Transactions.UserID
-      WHERE Users.UserID = ?
+        SELECT Users.UserID, Users.LastName, Users.FirstName, Transactions.Amount, Transactions.Day
+        FROM Users
+        INNER JOIN Transactions ON Users.UserID = Transactions.UserID
+        WHERE Users.UserID = ?
     `;
     db.all(sql, userId, (err, rows) => {
       if (err) {

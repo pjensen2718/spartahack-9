@@ -23,6 +23,7 @@ export const Card = (props) => {
 
 // Graph Card - Card with graph :)
 export const GraphCard = (data_in) => {
+    console.log(data_in);
     return (
         <View style={styles.centered}>
             <LineChart
