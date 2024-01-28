@@ -1,6 +1,6 @@
 import { View, Text, Button, Statusbar } from "react-native";
-import Card from "../components/card.js";
-import { GlobalColor, GlobalText } from "../components/global_styles";
+import { Card } from "../components/card.js";
+import { GlobalColor, GlobalText } from "../components/global_styles.js";
 
 export default function Assets({ navigation }) {
     console.log("-> Assets");
