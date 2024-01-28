@@ -1,12 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import { StyleSheet, Text, View } from 'react-native';
+import Testmain from './pages/testmain.js';
+import Debt from './pages/debt.js';
+
+function DetailsScreen() {
+  return (
+    <View style={styles.container}>
+      <Text>Details Screen</Text>
+    </View>
+  );
+}
+
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Testmain" screenOptions={{animationEnabled: false}}>
+        <Stack.Screen name="Testmain" component={Testmain} options={{ headerLeft: () => null }}/>
+        <Stack.Screen name="Debt" component={Debt} options={{ headerLeft: () => null }}/>
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
