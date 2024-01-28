@@ -124,9 +124,6 @@ function Dashboard(props) {
 }
 
 const styles = StyleSheet.create({
-    background: {
-        flex: 1,
-    },
     loginButton: {
         width: '100%',
         height: 70, 
