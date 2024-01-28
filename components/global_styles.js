@@ -24,5 +24,5 @@ export const GlobalText = StyleSheet.create({
 export const GlobalColor = {
     background: "#FFF",
     card: "#DFE6DA",
-    dark1: "CBD5C0"
+    dark1: "#CBD5C0"
 };
