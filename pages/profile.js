@@ -6,10 +6,7 @@ import { GlobalText, GlobalColor } from '../components/global_styles';
 
 export default function ProfileScreen() {
     return (
-        <ScrollView style = {styles.background}>
-            <View style = {styles.topBuffer}>
-            </View>
-
+        <ScrollView style={GlobalColor.bg}>
             <Card>
                 <Text style = {GlobalText.headerText}>
                     Account Security
@@ -59,11 +56,4 @@ export default function ProfileScreen() {
 
         </ScrollView>
     );
-};
-
-const styles = StyleSheet.create({
-    background: {
-        flex: 1,
-        backgroundColor: GlobalColor.background
-    }
-});
+}

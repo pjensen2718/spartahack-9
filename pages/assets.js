@@ -1,52 +1,42 @@
 import { View, Text, Button, Statusbar } from "react-native";
-import { Card } from "../components/card.js";
-import { GlobalColor, GlobalText } from "../components/global_styles";
+import { Card, CardFooter } from "../components/card.js";
+import { GlobalColor, GlobalText } from "../components/global_styles.js";
 
-export default function Assets({ navigation }) {
+export default function Assets() {
     console.log("-> Assets");
     return (
         // the below should have style sheets implemented
         // requires:
         //   -background color
         //   -boxes for text, images?, data
-        <View style={{backgroundColor: GlobalColor.background}}>
+        <View style={GlobalColor.bg}>
             {/* the segment below is for the top section:
                 meant for short-term assets */}
             <Card>
                 {/* header */}
-                <Text>Short-Term Assets</Text>
+                <Text style={GlobalText.headerText}>Short-Term Assets</Text>
                 {/* 
                   * bullet listing
                   * 
                   */}
+                <Text style={GlobalText.normalText}>
+                    
+                </Text>
             </Card>
             {/* the segment below is for the bottom section:
                 meant for long-term assets */}
             <Card>
                 {/* header */}
-                <Text>Long-Term Assets</Text>
+                <Text style={GlobalText.headerText}>Long-Term Assets</Text>
                 {/* 
                   * bullet listing
                   * 
                   */}
+                <Text style={GlobalText.normalText}>
+                    
+                    </Text>
             </Card>
-            {/* the below should be the navigation bar */}
-            <View>
-                <Button 
-                    title="Go to home"
-                    onPress={() => navigation.navigate("Testmain")}
-                />
-                {/* here perhaps there should still be an icon
-                    for assets, but should be unpressable*/}
-                <Button 
-                    title="Go to debts"
-                    onPress={() => navigation.navigate("Debt")}
-                />
-                <Button 
-                    title="Go to profile"
-                    onPress={() => navigation.navigate("Profile")}
-                />
-            </View>
+            <CardFooter></CardFooter>
         </View>
     );
 }
