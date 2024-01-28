@@ -1,6 +1,8 @@
 import React from "react";
 import {Button, StyleSheet, Text, View, ImageBackground, ScrollView, Dimensions} from "react-native";
 import Card from '../components/card';
+import global_styles from '../components/global_styles';
+
 // import firestore from '@react-native-firebase/firestore';
 
 function ProfileScreen() {
@@ -9,14 +11,11 @@ function ProfileScreen() {
             <View style = {styles.topBuffer}>
             </View>
             <Card>
-                <Text>IVE GOT A BLANK SPACE BABYYY AND ILL WRITE OUYIR NAME hihuisdjfhsijkfdhsndkfs
-                    kdsjafhioasdfhaisufbaisjdkfbnasiudfhasidf
-                    adfibasiufhuoisenjkmahdadf
-                    asfhu9aeiuhfjasiuofjdklfjhasiudfhdsgiojfkndashfgirfb dvshjgiorehbegwruifjodsb vhjgifroedsb nvhjgiufdjbgjeru
-                    dafiuarhewdjocknfhrgfuewiedojahsbvdgeuirfowdjcksbhgtuefijorsdnvbhsgrtueifjosdbvhgreifowdnshvb
-                    sgsrfeisdcjfergbfhu
-                    fgrfewiuhdcsjofrfeds
-                    cfv';gtlrfhudijroa
+                <Text style = {global_styles.headerText}>
+                    Login Info
+                </Text>
+                <Text style = {global_styles.normalText}>
+                    Hi
                 </Text>
             </Card>
         </ScrollView>
