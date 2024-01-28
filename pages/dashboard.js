@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ImageBackground, StyleSheet, View, Text, SafeAreaView,ScrollView, Dimensions, Image} from "react-native";
-import Card from '../components/card.js';
+import { Card } from '../components/card.js';
 
 import {
     LineChart,
@@ -29,7 +29,7 @@ function Dashboard(props) {
 
     return (
         <ScrollView style = {styles.background}>
-            <ImageBackground 
+            <ImageBackground
                 style={styles.background}
                 source={require('../assets/splash.png')}
             >

@@ -37,10 +37,10 @@ export default function NavBar() {
             tabBarInactiveTintColor: 'gray',
           })}
         >
-        <Tab.Screen name="Home" component={Dashboard} />
-        <Tab.Screen name="Assets" component={Assets} />
-        <Tab.Screen name="Debt" component={Debt} />
-        <Tab.Screen name="Settings" component={Profile} />
+        <Tab.Screen name="Home" component={Dashboard} options={{ headerShown: false }}/>
+        <Tab.Screen name="Assets" component={Assets} options={{headerStyle: {elevation: 0,shadowOpacity: 0,borderBottomWidth: 0,},}}/>
+        <Tab.Screen name="Debt" component={Debt} options={{headerStyle: {elevation: 0,shadowOpacity: 0,borderBottomWidth: 0,},}}/>
+        <Tab.Screen name="Settings" component={Profile} options={{headerStyle: {elevation: 0,shadowOpacity: 0,borderBottomWidth: 0,},}}/>
         </Tab.Navigator>
     </NavigationContainer>
   );
