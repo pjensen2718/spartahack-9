@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Dimensions } from 'react-native';
+import { GlobalColor } from './global_styles';
 
 // Based off of
 // https://www.youtube.com/watch?v=Uan5nIEc904
@@ -24,12 +25,11 @@ const styles = {
     containerStyle: {
         borderWidth: screenWidth/15,
         borderRadius: screenWidth/15,
-        borderColor: '#ddd',
-        backgroundColor: '#ddd',
-        borderBottomWidth: screenWidth/15,
+        borderColor: GlobalColor.card,
+        backgroundColor: GlobalColor.card,
         marginLeft: screenWidth/20,
         marginRight: screenWidth/20,
-        marginTop: screenWidth/20
+        marginTop: screenWidth/20,
     }
 }
 
