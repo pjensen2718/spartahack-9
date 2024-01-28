@@ -26,15 +26,8 @@ function ProfileScreen() {
 const styles = StyleSheet.create({
     background: {
         flex: 1,
-        backgroundColor: '#d3d3d3'
-    },
-    topBuffer: {
-        flex: 1,
-        backgroundColor: '#d3d3d3',
-        height: Dimensions.get('window').height/13
+        backgroundColor: '#fff'
     }
-
-
 });
 
 
