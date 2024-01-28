@@ -1,5 +1,5 @@
 import { View, Text, Button, Statusbar } from "react-native";
-import Card from "../components/card.js";
+import {Card, CardFooter} from "../components/card.js";
 import { GlobalColor, GlobalText } from "../components/global_styles";
 
 export default function Assets({ navigation }) {
@@ -30,6 +30,7 @@ export default function Assets({ navigation }) {
                   * 
                   */}
             </Card>
+            <CardFooter></CardFooter>
             {/* the below should be the navigation bar */}
             <View>
                 <Button 
