@@ -6,10 +6,6 @@ export default function Debt({ navigation}) {
     <View style={styles.container}>
       <Text>test!</Text>
       <StatusBar style="auto" />
-      <Button
-        title="Go to home"
-        onPress={() => navigation.navigate('Testmain')}
-      />
     </View>
   );
 }
