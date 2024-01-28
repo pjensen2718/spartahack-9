@@ -27,10 +27,9 @@ const styles = {
         borderRadius: screenWidth/15,
         borderColor: GlobalColor.card,
         backgroundColor: GlobalColor.card,
-        borderBottomWidth: screenWidth/15,
         marginLeft: screenWidth/20,
         marginRight: screenWidth/20,
-        marginTop: screenWidth/20
+        marginTop: screenWidth/20,
     }
 }
 

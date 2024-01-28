@@ -9,14 +9,44 @@ export default function ProfileScreen() {
         <ScrollView style = {styles.background}>
             <View style = {styles.topBuffer}>
             </View>
+
             <Card>
                 <Text style = {GlobalText.headerText}>
-                    Login Info
+                    Account Security
                 </Text>
                 <Text style = {GlobalText.normalText}>
-                    Hi
+                    {"\n"}
+                    name
+                    {"\n"}{"\n"}
+                    email
+                    {"\n"}{"\n"}
+                    password
                 </Text>
             </Card>
+
+            <Card>
+                <Text style = {GlobalText.headerText}>
+                        Connected Accounts
+                </Text>
+                <Text style = {GlobalText.normalText}>
+                    Im blue dabadnabdabdad
+                    {"\n"}
+                    {"\n"}
+                    {"\n"}
+                    {"\n"}
+                    yes
+                </Text>
+            </Card>
+
+            <Card>
+                <Text style = {GlobalText.headerText}>
+                        Preferences
+                </Text>
+                <Text style = {GlobalText.normalText}>
+                    lorem ispum dolar blah bal
+                </Text>
+            </Card>
+
         </ScrollView>
     );
 };
