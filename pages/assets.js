@@ -2,7 +2,7 @@ import { View, Text, Button, Statusbar } from "react-native";
 import { Card, CardFooter } from "../components/card.js";
 import { GlobalColor, GlobalText } from "../components/global_styles.js";
 
-export default function Assets({ navigation }) {
+export default function Assets() {
     console.log("-> Assets");
     return (
         // the below should have style sheets implemented
@@ -14,7 +14,7 @@ export default function Assets({ navigation }) {
                 meant for short-term assets */}
             <Card>
                 {/* header */}
-                <Text>Short-Term Assets</Text>
+                <Text style={GlobalText.headerText}>Short-Term Assets</Text>
                 {/* 
                   * bullet listing
                   * 
@@ -24,30 +24,13 @@ export default function Assets({ navigation }) {
                 meant for long-term assets */}
             <Card>
                 {/* header */}
-                <Text>Long-Term Assets</Text>
+                <Text style={GlobalText.headerText}>Long-Term Assets</Text>
                 {/* 
                   * bullet listing
                   * 
                   */}
             </Card>
             <CardFooter></CardFooter>
-            {/* the below should be the navigation bar */}
-            <View>
-                <Button 
-                    title="Go to home"
-                    onPress={() => navigation.navigate("Testmain")}
-                />
-                {/* here perhaps there should still be an icon
-                    for assets, but should be unpressable*/}
-                <Button 
-                    title="Go to debts"
-                    onPress={() => navigation.navigate("Debt")}
-                />
-                <Button 
-                    title="Go to profile"
-                    onPress={() => navigation.navigate("Profile")}
-                />
-            </View>
         </View>
     );
 }
