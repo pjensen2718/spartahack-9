@@ -10,6 +10,10 @@ function Testmain({ navigation }) {
         title="Go to Debt"
         onPress={() => navigation.navigate('Debt')}
       />
+      <Button
+        title="Go to Profile"
+        onPress={() => navigation.navigate('Profile')}
+      />
     </View>
   );
 }
