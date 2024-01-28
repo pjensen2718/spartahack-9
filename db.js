@@ -2,7 +2,7 @@ const {MongoClient} = require('mongodb')
 
 let dbConnection
 
-let uri = 'mongodb+srv://ericyuan:oYoWLBvcSUU2YCqx@spartahack9.pfiocqz.mongodb.net/?retryWrites=true&w=majority'
+let uri = 
 
 
 module.exports = {
