@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ImageBackground, StyleSheet, View, Text, StatusBar,ScrollView, Dimensions, Image, SafeAreaView, Platform} from "react-native";
-import {Card} from '../components/card.js';
+import {Card, GraphCard, CardFooter } from '../components/card.js';
+import { GlobalColor, GlobalText } from '../components/global_styles.js';
 
 import {
     LineChart,
@@ -52,51 +53,13 @@ function Dashboard(props) {
                 </SafeAreaView>
 
                 {/* Line Chart */} 
-                <View style={styles.centered}>
-                    <LineChart
-                        data={{
-                        labels: ["January", "February", "March", "April", "May", "June"],
-                        datasets: [
-                            {
-                            data: [
-                                100,
-                                200,
-                                300,
-                                -100,
-                                20,
-                                Math.random() * 100
-                            ]
-                            }
-                        ]
-                        }}
-                        width={Dimensions.get("window").width*0.9} // from react-native
-                        height={220}
-                        yAxisLabel="$"
-                        yAxisSuffix="k"
-                        yAxisInterval={1} // optional, defaults to 1
-                        chartConfig={{
-                        backgroundColor: "#e26a00",
-                        backgroundGradientFrom: "#fb8c00",
-                        backgroundGradientTo: "#ffa726",
-                        decimalPlaces: 2, // optional, defaults to 2dp
-                        color: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
-                        labelColor: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
-                        style: {
-                            borderRadius: 16
-                        },
-                        propsForDots: {
-                            r: "6",
-                            strokeWidth: "2",
-                            stroke: "#ffa726"
-                        }
-                        }}
-                        bezier
-                        style={{
-                        marginVertical: 4,
-                        borderRadius: 16
-                        }}
-                    />
-                </View>
+                <GraphCard>
+                    {[["Jan","Feb","Mar","Apr","May"],[1,2,50,180,200]]}
+                </GraphCard>
+
+                <Card>
+                    <Text style = {GlobalText.headerText}>Due this month:</Text>
+                </Card> 
 
                 <View style={{alignItems: 'flex-end', marginRight: 20}}>
                     <Text> Expand    </Text>
