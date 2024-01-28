@@ -9,15 +9,20 @@ import { PixelRatio, StyleSheet } from 'react-native';
 const fontScale = PixelRatio.getFontScale();
 const getFontSize = size => size / fontScale;
 
-
-
-export default StyleSheet.create({
+// Text properties
+export const GlobalText = StyleSheet.create({
     normalText: {
         fontSize: getFontSize(14)
     },
-    
     headerText: {
         fontSize: getFontSize(20),
         fontWeight: 'bold'
     }
 });
+
+// Color Properties
+export const GlobalColor = {
+    background: "#FFF",
+    card: "#DFE6DA",
+    dark1: "CBD5C0"
+};
